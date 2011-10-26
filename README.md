@@ -10,4 +10,4 @@ TODO:
    the wire.
  * Tests
 
-[zipper] https://secure.wikimedia.org/wikipedia/en/wiki/Zipper_%28data_structure%29
+[zipper]: https://secure.wikimedia.org/wikipedia/en/wiki/Zipper_%28data_structure%29
