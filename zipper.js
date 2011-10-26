@@ -7,7 +7,7 @@ function children(object) {
   ) : undefined
 }
 
-function toZipper(object) {
+function fromObject(object) {
   return {
     lefts : [],
     focus : object,
@@ -15,9 +15,9 @@ function toZipper(object) {
   }
 }
 
-function fromZipper(zipper) {
+function toObject(zipper) {
   var parents = zipper && up(zipper);
-  return parents ? fromZipper(parents) : zipper;
+  return parents ? toObject(parents) : zipper;
 }
 
 
@@ -99,8 +99,8 @@ function fold(zipper, fun, acc, next) {
   return fold(fold(next(zipper), fun, acc, next)
 }*/
 
-exports.toZipper = toZipper
-exports.fromZipper = fromZipper
+exports.fromObject = fromObject
+exports.toObject = toObject
 exports.children = children
 exports.up = up
 exports.down = down
