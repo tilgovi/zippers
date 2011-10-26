@@ -1,0 +1,14 @@
+{
+  "author": "Randall Leeds <randall@apache.org> (http://bleeds.info/)",
+  "name": "zippers",
+  "description": "A zipper implementation for JavaScript objects.",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~v0.4.12"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
